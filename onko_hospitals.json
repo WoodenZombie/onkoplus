@@ -1,0 +1,38 @@
+[
+    {
+        "region":"Hlavní město Praha",
+        "hospitals":
+        [
+            {
+                "name":"Fakultní nemocnice Královské Vinohrady",
+                "type":["KOC", "HOC", "MS", "CS", "LDN", "PM"],
+                "address":"Fakultní nemocnice Královské Vinohrady, Šrobárova 50, 100 34, Praha 10",
+                "insurance":[]
+            },
+            {
+                "name":"",
+                "type":"",
+                "address":"",
+                "min_age":""
+            },
+            {
+                "name":"",
+                "type":"",
+                "address":"",
+                "min_age":""
+            },
+            {
+                "name":"",
+                "type":"",
+                "address":"",
+                "min_age":""
+            },
+            {
+                "name":"",
+                "type":"",
+                "address":"",
+                "min_age":""
+            }
+        ]
+    }
+]
