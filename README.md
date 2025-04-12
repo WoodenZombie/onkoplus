@@ -1,13 +1,12 @@
-# onkoplus
+# Onko+: Unified oncology appointment system
 Application for unifying data for oncological medical care, creating a filter for looking the clinic that solves person's problem and creating a doctor's appointment created during Rakathon
 
-It is more of an idea of a large project that can help to unify different oncological centers, help patients to find any needed information about the medical care that they need and, in scaling perspective, can help to unify medical system over the whole Czech republic and digitalize making doctor's appointments.
+It is an idea of a large project that can help to unify different oncological centers, help patients to find any needed information about the medical care that they need and digitalize making doctor's appointments.
 
-Project consists of different parts:
-1) Creating one database for all the medical clinics and hospitals that help to diagnose/cure/prevent/etc. oncological problem
-2) Creating an algorithm that help to find the nearest clinic that solves the patient's problem (KOC, ROC, HOC, )
-3) Creating a system to make an appointment to a doctor that person needs and for a doctor to see all the appointments
-    with the whole information about the patient (previous appointments, examinations, diagnosis, etc.)
+Project consists of 3 different parts:
+1) Creating one database for all the medical clinics and hospitals that help to diagnose/cure/prevent/etc. onkological problem
+2) Creating an algorithm that help to find the nearest clinic that solves the patient's problem based on their needs, location of the clinic and its capacity
+3) Make an application that helps to make an appointment to a doctor (for the patient) and to provide the time for the appointments, see who and when made an appointment and plan the schedule (for the doctor)
 
 # Database
 
@@ -25,7 +24,8 @@ Based on the type of help, clinics are divided into different categories (some c
 - LDN - Léčebna pro dlouhodobě nemocné a hospise
 - PSKOC - pracoviště spolupracující s KOC
 
-Besides that, there is such data as:
+Besides that, there is such data as (but not limited to):
+- Is it a govermental or a private clinic
 - Address
 - (If ROC) Type of tumours that clinic specializes on, that are also divided into different categories:
 - - NKO - Nádorů kolorekta  
@@ -39,22 +39,24 @@ Besides that, there is such data as:
 - Type of available examinations
 - Category of diagnostical fiels of medicine
 - Medical equipment
- 
- information about the address of the certain clinic, type of preventive medicine/examination that can be done in this clinic, website
+- Is there a possibility of hospitalisation
+- Website
+- Email
+- Ordination contact phone number
+- What insurances does this clinic cooperates with
+- Nearest appointment time (more about that in the part three)
 
-The idea was to also add the capacity of a certain clinic, but, unfortunately, the only portal that was providing this information had a disclaimer that it wasn't renewed from the year 2007
-BUT by using one unified appointment system this problem can be solved automatically (more about that in the part 3)
-
-ROOM FOR IMPROVEMENT: Clinics do not provide what insurances do they cooperate with (only on uzis), this can be a very useful information for the foreigners that do not have VZP or any other govermental insurance. As hackathon is a very time-limited event, there was little to no time to pay attention to all the needed details and add all of them to this database, so I was focusing only on the main ones
-
+Example of a collected and classified data you can find in onko_hospitals.json
+Due to time limitations of the hakathon it is limited to three clinics only, but the final database will have much more parameters and all the medical care providers that specialize in oncology or cooperate with KOC
+Data was automatically crawled using artificial intelligence from clinics' official websites and wasn't verified in National registr of medical care providers so it can contain mistakes, data is provided only for the purpose of displaying possible data structure
 
 # Algorithm for looking for a clinic
 
-
+# Unified oncology appointment application
 
 Materials:
-Information where exactly information was taken from:
-1. https://www.onconet.cz/index.php?pg=kraj (!Information isn't actualized on the website!)
-2. https://www.vzp.cz/pojistenci/zdravotnicka-zarizeni-a-specializovana-centra/specializovana-pracoviste/regionalni-onkologicka-centra
-3. https://www.linkos.cz/pacient-a-rodina/lecba/kde-se-lecit/seznam-koc/
-4. https://nrpzs.uzis.cz/index.php?pg=home--download
+1. Czech National Cancer Control Program: https://www.onconet.cz/index.php?pg=kraj 
+2. List of regional oncological centers and what kind of tumours they specialize on: https://www.vzp.cz/pojistenci/zdravotnicka-zarizeni-a-specializovana-centra/specializovana-pracoviste/regionalni-onkologicka-centra
+3. List of komplex oncological centers: https://www.linkos.cz/pacient-a-rodina/lecba/kde-se-lecit/seznam-koc/
+4. Database of medical care providers available for downloading: https://nrpzs.uzis.cz/index.php?pg=home--download
+5. Definition of ROC and what kind of help they can provide: https://www.linkos.cz/files/pro_odborniky/napl_onko_prog/sled_predikce_onko/Forum/04_2024/9-Spoluprace-KOC-ROS-delegovani-lecby-aktulnI-vyvoj-z-pohledu-VZP.pdf

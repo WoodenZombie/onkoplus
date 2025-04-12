@@ -4,24 +4,235 @@
         "hospitals":
         [
             {
-                "name":"Fakultní nemocnice Královské Vinohrady",
-                "type":["KOC", "HOC", "MS", "CS", "LDN", "PSKOC"],
-                "address":"Fakultní nemocnice Královské Vinohrady, Šrobárova 50, 100 34, Praha 10",
-                "insurance":[111, 201, 205, 207, 209, 211, 213]
-            },
+                "name": "Fakultní nemocnice Královské Vinohrady",
+                "type": "governmental",
+                "address": {
+                  "street": "Šrobárova 50",
+                  "city": "Praha",
+                  "postal_code": "100 34",
+                  "country": "Czech Republic"
+                },
+                "clinics": [
+                  {
+                    "name": "Komplexní onkologické centrum (KOC)",
+                    "categories": ["KOC"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Mammography",
+                      "Prostate MRI",
+                      "Chemotherapy",
+                      "Pulmonary tumor resection"
+                    ],
+                    "diagnostic_fields": ["Oncology", "Urology", "Pulmonology"],
+                    "equipment": ["PET-CT", "CyberKnife", "Linear accelerator"],
+                    "hospitalization": true,
+                    "website": "https://www.fnkv.cz/onkologie",
+                    "email": "onkocentrum@fnkv.cz",
+                    "phone": "+420 267 161 111",
+                    "insurances": ["VZP", "VoZP", "ČPZP"],
+                    "nearest_appointment": "2023-11-18"
+                  },
+                  {
+                    "name": "Akreditované centrum kolonoskopického screeningu (CS)",
+                    "categories": ["CS"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Colonoscopy",
+                      "Polyp removal",
+                      "Genetic counseling"
+                    ],
+                    "diagnostic_fields": ["Gastroenterology"],
+                    "equipment": ["HD endoscopes", "Capsule endoscopy"],
+                    "hospitalization": false,
+                    "website": "https://www.fnkv.cz/gastroenterologie",
+                    "email": "gastro@fnkv.cz",
+                    "phone": "+420 267 161 222",
+                    "insurances": ["VZP", "VoZP"],
+                    "nearest_appointment": "2023-11-12"
+                  },
+                  {
+                    "name": "Hematoonkologické centrum (HOC)",
+                    "categories": ["HOC"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Bone marrow biopsy",
+                      "Stem cell transplantation",
+                      "Immunotherapy"
+                    ],
+                    "diagnostic_fields": ["Hematology"],
+                    "equipment": ["Flow cytometer", "Apheresis machine"],
+                    "hospitalization": true,
+                    "website": "https://www.fnkv.cz/hematologie",
+                    "email": "hematologie@fnkv.cz",
+                    "phone": "+420 267 161 333",
+                    "insurances": ["VZP", "ČPZP"],
+                    "nearest_appointment": "2023-11-22"
+                  }
+                ],
+                "additional_info": {
+                  "emergency_contact": "+420 267 161 000",
+                  "general_website": "https://www.fnkv.cz",
+                  "notes": "Specializes in oncology, cardiology, and trauma care. Affiliated with 3rd Medical Faculty of Charles University."
+                }
+              },
             {
-                "name":"Fakultní nemocnice v Motole",
-                "type":["KOC", "DOC", "MS", "CS", "LDN", "PSKOC"],
-                "address":"Fakultní nemocnice Královské Vinohrady, Šrobárova 50, 100 34, Praha 10",
-                "insurance":[111, 201, 205, 207, 209, 211, 213]
-            },
-            {
-                "name":"ÚVN – Vojenská fakultní nemocnice Praha",
-                "type":["ROC", "CS", "PSKOC"],
-                "tumor_type":["NKO", "NHC", "NPL", "GIS", "NPR", "NLE", "NOV"],
-                "address":"U Vojenské nemocnice 1200, 169 02 Praha 6",
-                "insurance":[111, 201, 205, 207, 209, 211, 213]
-            }
+                "name": "Fakultní nemocnice Motol v Praze",
+                "type": "governmental",
+                "address": {
+                  "street": "V Úvalu 84",
+                  "city": "Praha",
+                  "postal_code": "150 06",
+                  "country": "Czech Republic"
+                },
+                "clinics": [
+                  {
+                    "name": "Dětské onkologické centrum (DOC)",
+                    "categories": ["DOC"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Pediatric oncology diagnostics",
+                      "Chemotherapy",
+                      "Radiotherapy planning"
+                    ],
+                    "diagnostic_fields": ["Pediatrics", "Oncology"],
+                    "equipment": ["MRI", "CT", "PET-CT"],
+                    "hospitalization": true,
+                    "website": "https://www.fnmotol.cz/detska-onkologie",
+                    "email": "detska.onkologie@fnmotol.cz",
+                    "phone": "+420 224 433 111",
+                    "insurances": ["VZP", "VoZP", "ČPZP"],
+                    "nearest_appointment": "2023-11-15"
+                  },
+                  {
+                    "name": "Komplexní onkologické centrum (KOC)",
+                    "categories": ["KOC", "PSKOC"],
+                    "tumor_specializations": ["NPR", "NKO", "NPL", "NOV"],
+                    "examinations": [
+                      "Mammography",
+                      "Colonoscopy",
+                      "Biopsy",
+                      "Immunotherapy"
+                    ],
+                    "diagnostic_fields": ["Oncology", "Radiology"],
+                    "equipment": ["Linear accelerator", "Ultrasound", "Digital mammograph"],
+                    "hospitalization": true,
+                    "website": "https://www.fnmotol.cz/onkologie",
+                    "email": "onkocentrum@fnmotol.cz",
+                    "phone": "+420 224 433 222",
+                    "insurances": ["VZP", "VoZP", "ČPZP", "ZPMV"],
+                    "nearest_appointment": "2023-11-10"
+                  },
+                  {
+                    "name": "Regionální onkologické centrum (ROC) - NPR",
+                    "categories": ["ROC"],
+                    "tumor_specializations": ["NPR"],
+                    "examinations": [
+                      "Breast ultrasound",
+                      "Genetic testing",
+                      "Oncologic surgery"
+                    ],
+                    "diagnostic_fields": ["Surgical oncology", "Mammology"],
+                    "equipment": ["3D mammograph", "MRI breast coil"],
+                    "hospitalization": true,
+                    "website": "https://www.fnmotol.cz/roc-prsu",
+                    "email": "roc.prsu@fnmotol.cz",
+                    "phone": "+420 224 433 333",
+                    "insurances": ["VZP", "VoZP"],
+                    "nearest_appointment": "2023-11-20"
+                  },
+                  {
+                    "name": "Akreditované centrum mamografického screeningu (MS)",
+                    "categories": ["MS"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Preventive mammography",
+                      "Breast biopsy"
+                    ],
+                    "diagnostic_fields": ["Preventive oncology"],
+                    "equipment": ["Digital mammograph", "Tomosynthesis"],
+                    "hospitalization": false,
+                    "website": "https://www.fnmotol.cz/mammo-screening",
+                    "email": "mammo@fnmotol.cz",
+                    "phone": "+420 224 433 444",
+                    "insurances": ["VZP", "VoZP", "ČPZP"],
+                    "nearest_appointment": "2023-11-05"
+                  }
+                ],
+                "additional_info": {
+                  "emergency_contact": "+420 224 433 555",
+                  "general_website": "https://www.fnmotol.cz",
+                  "notes": "One of the largest hospitals in the Czech Republic, specializing in pediatric and adult care."
+                }
+              },
+              {
+                "name": "Ústřední vojenská nemocnice – Vojenská fakultní nemocnice Praha",
+                "type": "governmental",
+                "address": {
+                  "street": "U Vojenské nemocnice 1200",
+                  "city": "Praha",
+                  "postal_code": "169 02",
+                  "country": "Czech Republic"
+                },
+                "clinics": [
+                  {
+                    "name": "Regionální onkologické centrum (ROC)",
+                    "categories": ["ROC"],
+                    "tumor_specializations": ["NKO", "NHC", "NPL", "GIS", "NPR", "NLE", "NOV"],
+                    "examinations": [
+                      "Lung CT screening",
+                      "Thoracic surgery",
+                      "Molecular diagnostics"
+                    ],
+                    "diagnostic_fields": ["Pulmonology", "Surgical oncology"],
+                    "equipment": ["Robotic surgery system (Da Vinci)", "EBUS bronchoscope"],
+                    "hospitalization": true,
+                    "website": "https://www.uvn.cz/pulmonologie",
+                    "email": "roc.plice@uvn.cz",
+                    "phone": "+420 973 201 111",
+                    "insurances": ["VZP", "VoZP", "ZPMV"],
+                    "nearest_appointment": "2023-11-25"
+                  },
+                  {
+                    "name": "Léčebna pro dlouhodobě nemocné (LDN)",
+                    "categories": ["LDN"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Palliative care",
+                      "Rehabilitation"
+                    ],
+                    "diagnostic_fields": ["Geriatrics", "Rehabilitation medicine"],
+                    "equipment": ["Mobility aids", "Physiotherapy tools"],
+                    "hospitalization": true,
+                    "website": "https://www.uvn.cz/ldn",
+                    "email": "ldn@uvn.cz",
+                    "phone": "+420 973 201 222",
+                    "insurances": ["VZP", "VoZP"],
+                    "nearest_appointment": "2023-11-30"
+                  },
+                  {
+                    "name": "Pracoviště spolupracující s KOC (PSKOC)",
+                    "categories": ["PSKOC"],
+                    "tumor_specializations": [],
+                    "examinations": [
+                      "Post-operative oncology care",
+                      "Pain management"
+                    ],
+                    "diagnostic_fields": ["Oncology"],
+                    "equipment": ["Palliative care beds", "Infusion pumps"],
+                    "hospitalization": true,
+                    "website": "https://www.uvn.cz/onkologie",
+                    "email": "onkologie@uvn.cz",
+                    "phone": "+420 973 201 333",
+                    "insurances": ["VZP", "ČPZP"],
+                    "nearest_appointment": "2023-11-28"
+                  }
+                ],
+                "additional_info": {
+                  "emergency_contact": "+420 973 201 000",
+                  "general_website": "https://www.uvn.cz",
+                  "notes": "Military hospital with civilian services. Specializes in trauma, oncology, and advanced surgery."
+                }
+              }
         ]
     }
 ]
