@@ -5,33 +5,22 @@
         [
             {
                 "name":"Fakultní nemocnice Královské Vinohrady",
-                "type":["KOC", "HOC", "MS", "CS", "LDN", "PM"],
+                "type":["KOC", "HOC", "MS", "CS", "LDN", "PSKOC"],
                 "address":"Fakultní nemocnice Královské Vinohrady, Šrobárova 50, 100 34, Praha 10",
-                "insurance":[]
+                "insurance":[111, 201, 205, 207, 209, 211, 213]
             },
             {
-                "name":"",
-                "type":"",
-                "address":"",
-                "min_age":""
+                "name":"Fakultní nemocnice v Motole",
+                "type":["KOC", "DOC", "MS", "CS", "LDN", "PSKOC"],
+                "address":"Fakultní nemocnice Královské Vinohrady, Šrobárova 50, 100 34, Praha 10",
+                "insurance":[111, 201, 205, 207, 209, 211, 213]
             },
             {
-                "name":"",
-                "type":"",
-                "address":"",
-                "min_age":""
-            },
-            {
-                "name":"",
-                "type":"",
-                "address":"",
-                "min_age":""
-            },
-            {
-                "name":"",
-                "type":"",
-                "address":"",
-                "min_age":""
+                "name":"ÚVN – Vojenská fakultní nemocnice Praha",
+                "type":["ROC", "CS", "PSKOC"],
+                "tumor_type":["NKO", "NHC", "NPL", "GIS", "NPR", "NLE", "NOV"],
+                "address":"U Vojenské nemocnice 1200, 169 02 Praha 6",
+                "insurance":[111, 201, 205, 207, 209, 211, 213]
             }
         ]
     }

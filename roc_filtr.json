@@ -1,0 +1,124 @@
+[
+    {
+        "tumour_group": "GIT",
+        "diagnosis":
+        [
+            {
+                "diagnostical_group":"Nádory kolorekta (NKO)",
+                "disease_code":
+                {
+                    "C18":"Zhoubný novotvar tlustého střeva",
+                    "C19":"Zhoubný novotvar rektosigmoideálního spojení",
+                    "C20":"Zhoubný novotvar konečníku"
+                },
+                "medication":
+                {
+                    "bevacizumab":["avastin", "zirabev", "mvast", "abevmy", "alymsys","oyavas","vegzelma"],
+                    "aflibercept":["zaltrap"]
+                }
+            },
+            {
+                "diagnostical_group":["Hepatocelulární karcinom", "NHC"],
+                "disease_code":
+                {
+                    "C22":"Zhoubný novotvar jater a intrahepatálních žlučových cest"
+                },
+                "medication":
+                {
+                    "sorafenib":["nevaxar", "sofarenib", "rentixola", "weldinin"]
+                }
+            }
+        ]
+    },
+    {
+        "tumour_group": "Plíce, pleura, thymus",
+        "diagnosis":
+        [
+            {
+                "diagnostical_group":["Nádory plic", "NPL"],
+                "disease_code":
+                {
+                    "NSCLC":"Non-small-cell lung cancer"
+                },
+                "medication":
+                {
+                    "pemetrexed":["alimta", "trixid", "pemetrexed", "armisarte"],
+                    "bevacizumab":["avastin", "zirabev", "mvast", "abevmy", "alymsys","oyavas","vegzelma"],
+                    "gefitinib":["iressa","gefitinib"],
+                    "erlotinib":["tarceva", "erlotinib"]
+                }
+            }
+        ]
+    },
+    {
+        "tumour_group": "GIST/Sarkomy",
+        "diagnosis":
+        [
+            {
+                "diagnostical_group":["Gastrointestinální stromální tumory", "GIS"],
+                "disease_code":
+                {
+                    "C38":"Zhoubný novotvar srdce‚ mezihrudí (mediastina) a pohrudnice (pleury)",
+                    "C47":"Zhoubný novotvar periferních nervů a autonomní nervové soustavy",
+                    "C48":"Zhoubný novotvar retroperitonea a peritonea",
+                    "C49":"Zhoubný novotvar jiné pojivové a měkké tkáně"
+                },
+                "medication":
+                {
+                    "imatinib":["glivec", "imatinib"]
+                }
+            }
+        ]
+    },
+    {
+        "tumour_group": "Prs",
+        "diagnosis":
+        [
+            {
+                "diagnostical_group":["Nádory prsu", "NPR"],
+                "disease_code":
+                {
+                    "C50":"Zhoubný novotvar prsu"
+                },
+                "medication":
+                {
+                    "trastuzumab":["herceptin", "kanjinti", "ogivri", "ontruzant", "herzuma", "trazimera", "zercepac"],
+                    "bevacizumab":["avastin", "zirabev", "mvast", "abevmy", "alymsys","oyavas","vegzelma"],
+                    "everolimus":["afinitor", "everolimus", "verimmus"]
+                }
+            }
+        ]
+    },
+    {
+        "tumour_group": "Urogenitální nádory",
+        "diagnosis":
+        [
+            {
+                "diagnostical_group":["Zhoubné nádory prostaty", "ZNP"],
+                "disease_code":
+                {
+                    "C61":"Zhoubný novotvar předstojné žlázy – prostaty"
+                },
+                "medication":
+                {
+                    "cabazitaxel":["jevtana", "cabazitaxel", "eleber"],
+                    "abiraterone":["zytiga", "abiraterone", "tatica"]
+                }
+            },
+            {
+                "diagnostical_group":["Nádory ledvin", "NLE"],
+                "disease_code":
+                {
+                    "C64":"Zhoubný novotvar ledviny mimo pánvičku"
+                },
+                "medication":
+                {
+                    "everolimus":["afinitor", "everolimus", "verimmus"],
+                    "sorafenib":["nevaxar", "sofarenib", "rentixola", "weldinin"],
+                    "sunitinib":["sutent", "sunitinib", "klertis"]
+
+                }
+            }
+        ]
+    }
+]
