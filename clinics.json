@@ -30,7 +30,7 @@
                     "email": "onkocentrum@fnkv.cz",
                     "phone": "+420 267 161 111",
                     "insurances": ["VZP", "VoZP", "ČPZP"],
-                    "nearest_appointment": "2023-11-18"
+                    "nearest_appointment": "2025-11-18"
                   },
                   {
                     "name": "Akreditované centrum kolonoskopického screeningu (CS)",
@@ -48,7 +48,7 @@
                     "email": "gastro@fnkv.cz",
                     "phone": "+420 267 161 222",
                     "insurances": ["VZP", "VoZP"],
-                    "nearest_appointment": "2023-11-12"
+                    "nearest_appointment": "2025-11-12"
                   },
                   {
                     "name": "Hematoonkologické centrum (HOC)",
@@ -66,7 +66,7 @@
                     "email": "hematologie@fnkv.cz",
                     "phone": "+420 267 161 333",
                     "insurances": ["VZP", "ČPZP"],
-                    "nearest_appointment": "2023-11-22"
+                    "nearest_appointment": "2025-11-22"
                   }
                 ],
                 "additional_info": {
@@ -101,7 +101,7 @@
                     "email": "detska.onkologie@fnmotol.cz",
                     "phone": "+420 224 433 111",
                     "insurances": ["VZP", "VoZP", "ČPZP"],
-                    "nearest_appointment": "2023-11-15"
+                    "nearest_appointment": "2025-11-15"
                   },
                   {
                     "name": "Komplexní onkologické centrum (KOC)",
@@ -120,25 +120,7 @@
                     "email": "onkocentrum@fnmotol.cz",
                     "phone": "+420 224 433 222",
                     "insurances": ["VZP", "VoZP", "ČPZP", "ZPMV"],
-                    "nearest_appointment": "2023-11-10"
-                  },
-                  {
-                    "name": "Regionální onkologické centrum (ROC) - NPR",
-                    "categories": ["ROC"],
-                    "tumor_specializations": ["NPR"],
-                    "examinations": [
-                      "Breast ultrasound",
-                      "Genetic testing",
-                      "Oncologic surgery"
-                    ],
-                    "diagnostic_fields": ["Surgical oncology", "Mammology"],
-                    "equipment": ["3D mammograph", "MRI breast coil"],
-                    "hospitalization": true,
-                    "website": "https://www.fnmotol.cz/roc-prsu",
-                    "email": "roc.prsu@fnmotol.cz",
-                    "phone": "+420 224 433 333",
-                    "insurances": ["VZP", "VoZP"],
-                    "nearest_appointment": "2023-11-20"
+                    "nearest_appointment": "2025-11-10"
                   },
                   {
                     "name": "Akreditované centrum mamografického screeningu (MS)",
@@ -155,7 +137,7 @@
                     "email": "mammo@fnmotol.cz",
                     "phone": "+420 224 433 444",
                     "insurances": ["VZP", "VoZP", "ČPZP"],
-                    "nearest_appointment": "2023-11-05"
+                    "nearest_appointment": "2025-11-05"
                   }
                 ],
                 "additional_info": {
@@ -190,7 +172,7 @@
                     "email": "roc.plice@uvn.cz",
                     "phone": "+420 973 201 111",
                     "insurances": ["VZP", "VoZP", "ZPMV"],
-                    "nearest_appointment": "2023-11-25"
+                    "nearest_appointment": "2025-11-25"
                   },
                   {
                     "name": "Léčebna pro dlouhodobě nemocné (LDN)",
@@ -207,7 +189,7 @@
                     "email": "ldn@uvn.cz",
                     "phone": "+420 973 201 222",
                     "insurances": ["VZP", "VoZP"],
-                    "nearest_appointment": "2023-11-30"
+                    "nearest_appointment": "2025-11-30"
                   },
                   {
                     "name": "Pracoviště spolupracující s KOC (PSKOC)",
@@ -224,7 +206,7 @@
                     "email": "onkologie@uvn.cz",
                     "phone": "+420 973 201 333",
                     "insurances": ["VZP", "ČPZP"],
-                    "nearest_appointment": "2023-11-28"
+                    "nearest_appointment": "2025-11-28"
                   }
                 ],
                 "additional_info": {
